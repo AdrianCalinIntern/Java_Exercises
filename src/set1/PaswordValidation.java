@@ -23,12 +23,5 @@ public class PaswordValidation {
         else{
             System.out.println("The password is not valid");
         }
-
-
-
     }
-
-
-
-
 }
