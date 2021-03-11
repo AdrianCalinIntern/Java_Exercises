@@ -16,12 +16,23 @@ public class PaswordValidation {
         validateThePassword(userPassword);
 
     }
-    public static void validateThePassword(String userPassword) {
-        if (userPassword.matches(".*\\d\\d.*") && userPassword.length() >= 10) {
-            System.out.println("You chose a good password");
+
+    public static void validateThePassword(String userPassword){
+        int  digitsCount = 0;
+        int charactersCount = 0;
+        for(int i=0; i<userPassword.length();i++){
+            Character character = userPassword.charAt(i);
+            if(Character.isDigit(character)){
+                digitsCount = digitsCount + 1;
+            }
+            if(Character.isAlphabetic(character)){
+                charactersCount = charactersCount + 1;
+            }
         }
-        else{
-            System.out.println("The password is not valid");
+        if(charactersCount >= 10 && digitsCount >= 2){
+            System.out.println("Valid password");
+        }else{
+            System.out.println("invalid password");
         }
     }
 }
