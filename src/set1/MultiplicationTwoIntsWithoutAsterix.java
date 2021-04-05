@@ -5,6 +5,7 @@ import java.util.concurrent.ExecutionException;
 
 /*
 Write a Java program to multiply two given integers without using the multiply operator(*).
+test
  */
 
 public class MultiplicationTwoIntsWithoutAsterix {
