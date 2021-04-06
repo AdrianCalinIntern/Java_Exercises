@@ -3,7 +3,7 @@ package arraysExercices;
 
 public class Ex3 {
     public static void main(String[] args) {
-        int[] intArray = {5,5,5};
+        int[] intArray = {5,5,5, 0};
 
         int sum = 0;
         for (int i = 0; i<intArray.length; i++){

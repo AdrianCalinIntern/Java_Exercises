@@ -4,7 +4,7 @@ package arraysExercices;
 
 public class Ex2 {
     public static void main(String[] args) {
-        int[] numericArray = {2,4,7,0};
+        int[] numericArray = {2,4,7,0, 1};
 
         int result = 0;
         for (int i=0; i<numericArray.length;i++){

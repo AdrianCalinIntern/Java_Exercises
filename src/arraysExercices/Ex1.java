@@ -11,7 +11,7 @@ public class Ex1 {
         I used sort method;
          */
 
-        int[] numericArray = {2,4,7,9,8,1,0};
+        int[] numericArray = {2,4,7,9,8,1,0,9};
         String[] stringArray = {"aaa", "ddd", "kkk", "bbb"};
 
         Arrays.sort(numericArray);
