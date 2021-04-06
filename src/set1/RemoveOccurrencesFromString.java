@@ -24,7 +24,7 @@ public class RemoveOccurrencesFromString {
     }
     public  static ArrayList createArray(int size){
         Scanner scanner = new Scanner(System.in);
-        ArrayList <Integer> userInput = new ArrayList<Integer>();
+        ArrayList <Integer> userInput = new ArrayList<>();
         for (int i = 0; i<size;i++){
             System.out.println("Element" + i + ": ");
             userInput.add(scanner.nextInt());
