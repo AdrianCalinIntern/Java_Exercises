@@ -1,8 +1,6 @@
 package arraysExercices;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.stream.StreamSupport;
 
 public class Ex7 {
     // Write a Java program to iterate through all elements in a array list and print them.
