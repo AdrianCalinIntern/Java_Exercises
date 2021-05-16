@@ -8,7 +8,7 @@ public class Arrays {
         //char[] op = {'d', 'a', 's', 'm'};
         //double[] result = new double[op.length];
 
-        
+
     }
     static double myMethod(char op, double leftVar, double rightVar){
         double result;
