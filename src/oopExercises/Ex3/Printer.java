@@ -2,18 +2,23 @@ package oopExercises.Ex3;
 
 public class Printer {
 
-    private int TonerLevel = 20;
-    private int pagesPrinted = 90;
+    private int TonerLevel;
+    private int pagesPrinted;
     private boolean isDuplexPrinter;
 
     public Printer(boolean printerType)
     {
+        this.TonerLevel = 20;
+        this.pagesPrinted = 1;
         this.isDuplexPrinter = printerType;
     }
 
 
     public void fillThePrinter(int value){
-        if(TonerLevel + value > 100){
+        if(TonerLevel  > 100){
+            System.out.println("The printer is full");
+        }
+        else if(TonerLevel + value > 100){
             System.out.println("The printer is full");
         }
         else{
@@ -22,11 +27,8 @@ public class Printer {
     }
 
     public void pagesToPrint(int value){
-        if (value>0){
             pagesPrinted = pagesPrinted + value;
-        }
     }
-
 
     @Override
     public String toString() {
