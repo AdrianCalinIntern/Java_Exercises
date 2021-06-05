@@ -1,6 +1,8 @@
 package oopExercises.Ex4;
 
 public class Ford extends Car{
+    private String bla;
+
     public Ford(int cylinders, String name){
         super(cylinders, name);
     }
@@ -13,11 +15,6 @@ public class Ford extends Car{
     @Override
     public String accelerate() {
         return "Ford - Accelerate";
-    }
-
-    @Override
-    public String brake() {
-        return "Ford - Brake";
     }
 
     @Override
