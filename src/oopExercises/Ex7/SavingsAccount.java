@@ -29,9 +29,9 @@ public class SavingsAccount {
 
     public double calculateMonthlyInterest(){
        System.out.println("Initial savingsBalance= " + savingsBalance);
-       double MonthlyInterest = (savingsBalance * annualInterestRate/100)/12;
-       System.out.println("MonthlyInterest = " + MonthlyInterest);
-       savingsBalance = savingsBalance + MonthlyInterest;
+       double monthlyInterest = (savingsBalance * annualInterestRate/100)/12;
+       System.out.println("MonthlyInterest = " + monthlyInterest);
+       savingsBalance = savingsBalance + monthlyInterest;
        return savingsBalance;
 
     }

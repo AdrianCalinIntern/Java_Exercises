@@ -32,6 +32,7 @@ public class Employee {
         else {
             this.monthlySalary = monthlySalary;
         }
+        // mo ve to seter
     }
 
     public String getFirstName() {

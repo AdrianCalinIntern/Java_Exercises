@@ -1,7 +1,7 @@
 package oopExercises.Ex4;
 
 public class Ford extends Car{
-    private String bla;
+
 
     public Ford(int cylinders, String name){
         super(cylinders, name);
