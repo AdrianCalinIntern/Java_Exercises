@@ -42,6 +42,19 @@ public class Main {
                     MobilePhone.addContact(c1);
                     System.out.println("\n***************************\n");
                     break;
+                case 3:
+
+                    System.out.println("\n***************************\n");
+                    System.out.println("Index value: ");
+                    int index = scanner.nextInt();
+                    System.out.println("New value - First name: ");
+                    String updatedFirstName = scanner.next();
+                    System.out.println("New value  - Phone number: ");
+                    String  updatedPhoneNumber = scanner.next();
+                    Contacts c2 = new Contacts(updatedFirstName,updatedPhoneNumber);
+
+                    MobilePhone.updateContact(c2,index);
+                    break;
             }
         }
 
