@@ -3,19 +3,20 @@ package oopExercises.Pb01;
 import java.util.ArrayList;
 
 public class MobilePhone {
-    private static ArrayList<Contacts> contactsArrayList = new ArrayList<Contacts>();
+    private  ArrayList<Contacts> contactsArrayList = new ArrayList<Contacts>();
 
-    public static ArrayList<Contacts> getContacts() {
+    //
+
+    public ArrayList<Contacts> getContacts() {
 
         return contactsArrayList;
     }
 
 
 
-    public static void addContact(Contacts contact) {
-        boolean isUnique = contactUniqueValidation(contact);
+    public  void addContact(Contacts contact) {
 
-        if(isUnique) {
+        if(contactUniqueValidation(contact)) {
             contactsArrayList.add(contact);
             System.out.println("\nThe contact was successfully added\n");
         }
@@ -25,11 +26,13 @@ public class MobilePhone {
 
 
 
-    public static void updateContact(Contacts updatedContact, int index){
+    public  void updateContact(Contacts updatedContact, int index){
         boolean isUnique = contactUniqueValidation(updatedContact);
 
         if(index < contactsArrayList.size() && isUnique) {
             contactsArrayList.set(index, updatedContact);
+            // un get pe Arraylist current index
+
             System.out.println("\nThe contact was successfully updated\n");
         }
 
@@ -42,7 +45,7 @@ public class MobilePhone {
 
 
 
-    public static void printContacts(){
+    public void printContacts(){
         for (int i = 0; i<contactsArrayList.size();i=i+1){
             System.out.println( i + " " +  contactsArrayList.get(i).getName() + ", " + contactsArrayList.get(i).getPhoneNumber());
         }
@@ -50,14 +53,8 @@ public class MobilePhone {
 
 
 
-    public static boolean contactUniqueValidation(Contacts contact) {
-        boolean isUnique = true;
-        for (int i = 0; i < contactsArrayList.size(); i++) {
-            if (contactsArrayList.get(i).getName().equals(contact.getName())) {
-                isUnique = false;
-            }
-        }
-        return isUnique;
+    public  boolean contactUniqueValidation(Contacts contact) {
+            return !contactsArrayList.contains(contact);
     }
 
 }

@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        MobilePhone m1 = new MobilePhone();
 
 
         while(true){
@@ -19,7 +20,7 @@ public class Main {
                     System.exit(0);
                     break;
                 case 1:
-                    if(MobilePhone.getContacts().isEmpty()){
+                    if(m1.getContacts().isEmpty()){
                         System.out.println("\n***************************\n");
                         System.out.println("Contact list is empty \n");
                         System.out.println("\n***************************\n");
@@ -27,7 +28,7 @@ public class Main {
                     else
                     {
                         System.out.println("\n***************************\n");
-                        MobilePhone.printContacts();
+                        m1.printContacts();
                         System.out.println("\n***************************\n");
                     }
                     break;
@@ -39,7 +40,7 @@ public class Main {
                     String  phoneNumber = scanner.next();
                     Contacts c1 = new Contacts(firstName,phoneNumber);
 
-                    MobilePhone.addContact(c1);
+                    m1.addContact(c1);
                     System.out.println("\n***************************\n");
                     break;
                 case 3:
@@ -53,7 +54,9 @@ public class Main {
                     String  updatedPhoneNumber = scanner.next();
                     Contacts c2 = new Contacts(updatedFirstName,updatedPhoneNumber);
 
-                    MobilePhone.updateContact(c2,index);
+                    m1.updateContact(c2,index);
+                    //p1 current name ; p2 new contact
+
                     break;
             }
         }
