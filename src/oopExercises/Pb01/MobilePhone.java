@@ -3,18 +3,15 @@ package oopExercises.Pb01;
 import java.util.ArrayList;
 
 public class MobilePhone {
-    private  ArrayList<Contacts> contactsArrayList = new ArrayList<Contacts>();
+    private ArrayList<Contacts> contactsArrayList = new ArrayList<>();
 
-    //
 
     public ArrayList<Contacts> getContacts() {
 
         return contactsArrayList;
     }
 
-
-
-    public  void addContact(Contacts contact) {
+    public void addContact(Contacts contact) {
 
         if(contactUniqueValidation(contact)) {
             contactsArrayList.add(contact);
@@ -47,13 +44,13 @@ public class MobilePhone {
 
     public void printContacts(){
         for (int i = 0; i<contactsArrayList.size();i=i+1){
-            System.out.println( i + " " +  contactsArrayList.get(i).getName() + ", " + contactsArrayList.get(i).getPhoneNumber());
+            System.out.println(contactsArrayList.get(i).getName() + ", " + contactsArrayList.get(i).getPhoneNumber());
         }
     }
 
 
 
-    public  boolean contactUniqueValidation(Contacts contact) {
+    public boolean contactUniqueValidation(Contacts contact) {
             return !contactsArrayList.contains(contact);
     }
 

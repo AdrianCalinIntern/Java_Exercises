@@ -1,0 +1,10 @@
+
+
+
+
+Design an implement abstract/concrete classes and/or interfaces (and the relationships between them) for the following domain:
+        a. There are 3 types of vehicles:  car, boat and airplane
+        b. Each type of vehicle has the following properties: name, weight, speed
+        c. Airplanes have an extra wingspan property.
+        d. Each type of vehicle can do the following actions, but in a different way:  start engine, cruise, turn, stop engine (write out different strings in each method)
+Construct an array 10 vehicles (of a variety of types in arbitrary order) and perform some actions on all of them.
