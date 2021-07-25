@@ -1,0 +1,21 @@
+Create a program that implements a simple mobile phone with the following capabilities. Able to store, modify, remove and query contact names.
+You will want to create a separate class for Contacts (name and phone number). Create a master class (MobilePhone) that holds the ArrayList of Contacts.
+The MobilePhone class has the functionality listed above. Add a menu of options that are available.
+Options:
+    • Quit,
+    • Print list of contacts,
+    • Add new contact,
+    • Update existing contact,
+    • Remove contact and search/find contact.
+When adding or updating be sure to check if the contact already exists (use name).
+Be sure not to expose the inner workings of the Arraylist to MobilePhone (e.g. no ints, no .get(i) etc.)
+MobilePhone should do everything with Contact objects only.
+
+
+
+Design an implement abstract/concrete classes and/or interfaces (and the relationships between them) for the following domain:
+        a. There are 3 types of vehicles:  car, boat and airplane
+        b. Each type of vehicle has the following properties: name, weight, speed
+        c. Airplanes have an extra wingspan property.
+        d. Each type of vehicle can do the following actions, but in a different way:  start engine, cruise, turn, stop engine (write out different strings in each method)
+Construct an array 10 vehicles (of a variety of types in arbitrary order) and perform some actions on all of them.

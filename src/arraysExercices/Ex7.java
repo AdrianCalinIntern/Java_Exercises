@@ -1,6 +1,7 @@
 package arraysExercices;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Ex7 {
     // Write a Java program to iterate through all elements in a array list and print them.
@@ -17,6 +18,5 @@ public class Ex7 {
         for (int i = 0; i<myArray.size(); i++){
             System.out.println(myArray.get(i));
         }
-
     }
 }
